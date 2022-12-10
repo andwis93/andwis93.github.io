@@ -190,6 +190,7 @@ $(document).ready(function() {
         desc: relatedTask.content,
         idList: selectedListId
       }),
+	  
       success: function(data) {
         console.log('Card created - ' + data.shortUrl);
         alert('Card created - ' + data.shortUrl);
