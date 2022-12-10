@@ -170,9 +170,7 @@ $(document).ready(function() {
     var $relatedTaskRow = $(event.target).parents('[data-task-id]');
     var relatedTaskId = $relatedTaskRow.attr('data-task-id');
     var relatedTask = availableTasks[relatedTaskId];
-	var selectedListId = '636cc8f3d867bd0029c52a07';
-	//636cc8f3d867bd0029c52a07
-    //var selectedListId = $relatedTaskRow.find('[data-list-name-select]').val();
+    var selectedListId = $relatedTaskRow.find('[data-list-name-select]').val();
 
     if (!selectedListId) {
       alert('You have to select a board and a list first!');
